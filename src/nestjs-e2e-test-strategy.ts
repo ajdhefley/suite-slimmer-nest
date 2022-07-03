@@ -1,7 +1,7 @@
 
 
 import { Test, TestingModule } from '@nestjs/testing';
-import { TestMockMapper, TestSuiteStrategy } from '@ajdhefley/test-suite';
+import { TestMockMapper, TestSuiteStrategy } from '@ajdhefley/test-suite-core';
 
 export class e2eNestJSTestStrategy extends TestSuiteStrategy {
     async initialize(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[], callback: Function) {

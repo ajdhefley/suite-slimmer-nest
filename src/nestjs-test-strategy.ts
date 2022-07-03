@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { TestMockMapper, TestSuiteStrategy } from '@ajdhefley/test-suite';
+import { TestMockMapper, TestSuiteStrategy } from '@ajdhefley/test-suite-core';
 
 export class NestJSTestStrategy<T> extends TestSuiteStrategy {
     constructor(readonly classType: any) {
