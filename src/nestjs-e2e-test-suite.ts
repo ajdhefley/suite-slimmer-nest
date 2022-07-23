@@ -1,5 +1,5 @@
 import { INestApplication } from '@nestjs/common';
-import { TestMockMapper, TestSuite } from '@ajdhefley/test-suite-core';
+import { TestMockMapper, TestSuite } from '@ajdhefley/slim-suite-core';
 import { e2eNestJSTestStrategy } from './nestjs-e2e-test-strategy';
 
 export class e2eNestJSTestSuite extends TestSuite<INestApplication> {

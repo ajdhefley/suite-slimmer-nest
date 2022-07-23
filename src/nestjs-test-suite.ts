@@ -1,4 +1,4 @@
-import { TestMockMapper, TestSuite } from '@ajdhefley/test-suite-core';
+import { TestMockMapper, TestSuite } from '@ajdhefley/slim-suite-core';
 import { NestJSTestStrategy } from './nestjs-test-strategy';
 
 type Class<T> = new (...args: any[]) => T;
