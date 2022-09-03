@@ -6,9 +6,15 @@ Eliminates boilerplate code for NestJS test files, making them much simpler and 
 * Encapsulates test module setup
 * Streamlines dependency mocking by generating providers and replacing functions with spies behind the scenes
 * Reduces the amount of test code that needs to be written, read, and maintained
-* Greatly increases developer productivity with less time spent on tests
+* Can easily be introduced into existing projects without disruption
 
 ## Usage
+
+Install the npm package.
+
+```
+npm install --save-dev slim-suite-nest
+```
 
 Instantiate the framework suite (`NestJSTestSuite` or `e2eNestJSTestSuite`), providing the type of the class you are testing as a required argument for non-e2e tests.
 
