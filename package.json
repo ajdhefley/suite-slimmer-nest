@@ -1,6 +1,9 @@
 {
-  "name": "@ajdhefley/slim-suite-nest",
+  "name": "slim-suite-nest",
+  "description": "Eliminates boilerplate code for NestJS tests, making them a pleasure to read and write.",
   "author": "Ashton Hefley",
+  "repository": "github:https://github.com/ajdhefley/slim-suite-nest",
+  "homepage": "https://github.com/ajdhefley/slim-suite-nest#readme",
   "version": "1.0.0",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -16,9 +19,9 @@
     "@types/node": "^16.11.7"
   },
   "dependencies": {
-    "@ajdhefley/slim-suite-core": "git+https://github.com/ajdhefley/slim-suite-core.git",
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.4.0",
+    "slim-suite": "^1.0.0",
     "typescript": "^4.4.4"
   }
 }
