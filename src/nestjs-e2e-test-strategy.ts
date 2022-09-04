@@ -1,18 +1,18 @@
 
 
+import { INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import { TestMockMapper, TestSuiteStrategy } from 'slim-suite';
+import { TestMockMapper } from 'slim-suite';
+import { BaseTestStrategy } from './base-test-strategy';
 
-export class e2eNestJSTestStrategy extends TestSuiteStrategy {
-    async initialize(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[], callback: Function) {
+export class e2eNestJSTestStrategy extends BaseTestStrategy<INestApplication> {
+    public override async initialize(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[]) {
         const moduleFixture: TestingModule = await Test.createTestingModule({
             imports,
             providers
         }).compile();
 
         let app = moduleFixture.createNestApplication();
-        await app.init();
-
-        callback(app, mockMapper);
+        return await app.init();
     }
 }

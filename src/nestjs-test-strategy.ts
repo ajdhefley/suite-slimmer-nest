@@ -1,18 +1,18 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { TestMockMapper, TestSuiteStrategy } from 'slim-suite';
+import { TestMockMapper } from 'slim-suite';
+import { BaseTestStrategy } from './base-test-strategy';
 
-export class NestJSTestStrategy<T> extends TestSuiteStrategy {
+export class NestJSTestStrategy<T> extends BaseTestStrategy<T> {
     constructor(readonly classType: any) {
         super();
     }
 
-    async initialize(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[], callback: Function) {
+    public override async initialize(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[]) {
         const app: TestingModule = await Test.createTestingModule({
             imports: imports,
             providers: providers.concat([this.classType])
         }).compile();
 
-        let cls = app.get<T>(this.classType);
-        callback(cls, mockMapper);
+        return app.get<T>(this.classType);
     }
 }

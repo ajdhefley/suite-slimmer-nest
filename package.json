@@ -2,10 +2,13 @@
   "name": "slim-suite-nest",
   "description": "Eliminates boilerplate code for NestJS test files, making them much simpler and smaller.",
   "author": "Ashton Hefley",
-  "license" : "MIT license",
-  "repository": "github:https://github.com/ajdhefley/slim-suite-nest",
+  "license": "MIT license",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajdhefley/slim-suite-nest"
+  },
   "homepage": "https://github.com/ajdhefley/slim-suite-nest#readme",
-  "version": "1.0.4",
+  "version": "1.1.0",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -22,7 +25,7 @@
   "dependencies": {
     "reflect-metadata": "^0.1.13",
     "rxjs": "^7.4.0",
-    "slim-suite": "^1.0.0",
+    "slim-suite": "^1.1.0",
     "typescript": "^4.4.4"
   }
 }

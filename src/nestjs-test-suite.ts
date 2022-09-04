@@ -8,8 +8,12 @@ export class NestJSTestSuite<T> extends TestSuite<T> {
         super(classType.name, excludeOthers);
     }
 
-    protected async initializeTest(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[], callback: Function) {
-        let strategy = new NestJSTestStrategy(this.classType);
-        await strategy.initialize(mockMapper, declarations, imports, providers, callback);
+    protected override async initializeTest(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[]) {
+        let strategy = new NestJSTestStrategy<T>(this.classType);
+        return await strategy.initialize(mockMapper, declarations, imports, providers);
+    }
+
+    protected override async initializeTests(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[]): Promise<void> {
+        
     }
 }

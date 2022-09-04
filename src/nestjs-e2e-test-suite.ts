@@ -7,8 +7,12 @@ export class e2eNestJSTestSuite extends TestSuite<INestApplication> {
         super(name, excludeOthers);
     }
 
-    protected async initializeTest(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[], callback: Function) {
+    protected override async initializeTest(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[]) {
         let strategy = new e2eNestJSTestStrategy();
-        await strategy.initialize(mockMapper, declarations, imports, providers, callback);
+        return strategy.initialize(mockMapper, declarations, imports, providers);
+    }
+
+    protected override async initializeTests(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[]): Promise<void> {
+        
     }
 }
