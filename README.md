@@ -1,4 +1,4 @@
-# slim-suite-nest
+# suite-slimmer-nest
 
 Eliminates boilerplate code for NestJS test files, making them much simpler and smaller.
 
@@ -13,7 +13,7 @@ Eliminates boilerplate code for NestJS test files, making them much simpler and 
 Install the npm package.
 
 ```
-npm install --save-dev slim-suite-nest
+npm install --save-dev suite-slimmer-nest
 ```
 
 Instantiate the framework suite (`NestJSTestSuite` or `e2eNestJSTestSuite`), providing the type of the class you are testing as a required argument for non-e2e tests.
@@ -33,7 +33,7 @@ On this object, the following methods available and can be chained:
 * afterEach
 * run
 
-No special configuration is required. As long as your tests are configured under Jest, they will run with slim-suite.
+No special configuration is required. As long as your tests are configured under Jest, they will run with suite-slimmer.
 
 ### Examples
 

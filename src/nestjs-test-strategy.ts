@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { TestMockMapper } from 'slim-suite';
+import { TestMockMapper } from 'suite-slimmer';
 import { BaseTestStrategy } from './base-test-strategy';
 
 export class NestJSTestStrategy<T> extends BaseTestStrategy<T> {

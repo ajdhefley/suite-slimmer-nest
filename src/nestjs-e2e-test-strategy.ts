@@ -2,7 +2,7 @@
 
 import { INestApplication } from '@nestjs/common';
 import { Test, TestingModule } from '@nestjs/testing';
-import { TestMockMapper } from 'slim-suite';
+import { TestMockMapper } from 'suite-slimmer';
 import { BaseTestStrategy } from './base-test-strategy';
 
 export class e2eNestJSTestStrategy extends BaseTestStrategy<INestApplication> {
