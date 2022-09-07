@@ -1,12 +1,11 @@
 # suite-slimmer-nest
 
-Eliminates boilerplate code for NestJS test files, making them much simpler and smaller.
+Streamlines NestJS testing.
 
-* Provides an elegant method-chaining API
-* Encapsulates test module setup
-* Streamlines dependency mocking by generating providers and replacing functions with spies behind the scenes
-* Reduces the amount of test code that needs to be written, read, and maintained
-* Can easily be introduced into existing projects without disruption
+* Encapsulates test module setup, reducing code duplication and boilerplate
+* Injects tested class and mocked dependencies directly into each test, no need for managing global variables
+* Mocks and spies on dependencies dynamically so you don't have to do it yourself
+* Easily phased into existing projects with no additional configuration required
 
 ## Usage
 
