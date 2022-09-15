@@ -32,6 +32,6 @@
   },
   "dependencies": {
     "reflect-metadata": "^0.1.13",
-    "suite-slimmer": "^2.0.0"
+    "suite-slimmer": "^3.0.0"
   }
 }

@@ -28,4 +28,8 @@ export class JestMocker extends DependencyMocker {
     
         return object;
     }
+
+    public override reset() {
+        jest.clearAllMocks();
+    }
 }
