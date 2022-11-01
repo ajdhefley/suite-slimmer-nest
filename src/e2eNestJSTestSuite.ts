@@ -1,6 +1,6 @@
 import { INestApplication } from '@nestjs/common';
 import { MockMapper, TestSuite } from 'suite-slimmer';
-import { e2eNestJSTestStrategy } from './nestjs-e2e-test-strategy';
+import { e2eNestJSTestStrategy } from './e2eNestJSTestStrategy';
 
 export class e2eNestJSTestSuite extends TestSuite<INestApplication> {
     constructor(name: string, excludeOthers: boolean = false) {

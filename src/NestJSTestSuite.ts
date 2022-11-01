@@ -1,5 +1,5 @@
 import { MockMapper, TestSuite } from 'suite-slimmer';
-import { NestJSTestStrategy } from './nestjs-test-strategy';
+import { NestJSTestStrategy } from './NestJSTestStrategy';
 
 type Class<T> = new (...args: any[]) => T;
 
