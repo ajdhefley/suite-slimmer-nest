@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { TestMockMapper } from 'suite-slimmer';
+import { MockMapper } from 'suite-slimmer';
 import { BaseTestStrategy } from './base-test-strategy';
 
 export class NestJSTestStrategy<T> extends BaseTestStrategy<T> {
@@ -7,7 +7,7 @@ export class NestJSTestStrategy<T> extends BaseTestStrategy<T> {
         super();
     }
 
-    public override async initialize(mockMapper: TestMockMapper, declarations: any[], imports: any[], providers: any[]) {
+    public override async initialize(mockMapper: MockMapper, declarations: any[], imports: any[], providers: any[]) {
         const app: TestingModule = await Test.createTestingModule({
             imports: imports,
             providers: providers.concat([this.classType])
