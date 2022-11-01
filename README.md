@@ -1,4 +1,4 @@
-# suite-slimmer-nest
+# suite-slimmer-nest &nbsp; ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dwyl/auth_plug/Elixir%20CI?label=build&style=flat-square) &nbsp; [![Node version](https://img.shields.io/npm/v/suite-slimmer-nest.svg?style=flat)](http://nodejs.org/download/)
 
 Streamlines NestJS testing.
 
