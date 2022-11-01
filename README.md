@@ -9,11 +9,15 @@ Streamlines NestJS testing.
 
 ## Usage
 
+### Installation
+
 Install the npm package.
 
 ```
 npm install --save-dev suite-slimmer-nest
 ```
+
+### Creating a test
 
 Instantiate the framework suite (`NestJSTestSuite` or `e2eNestJSTestSuite`), providing the type of the class you are testing as a required argument for non-e2e tests.
 
@@ -32,9 +36,15 @@ On this object, the following methods available and can be chained:
 * afterEach
 * run
 
-No special configuration is required. As long as your tests are configured under Jest, they will run with suite-slimmer.
+## Frameworks
 
-### Examples
+The following test frameworks are supported:
+
+* Jasmine
+* Jest
+* Mocha
+
+## Examples
 
 __Before:__
 
