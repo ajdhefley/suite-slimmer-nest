@@ -7,6 +7,13 @@ Streamlines NestJS testing.
 * Mocks and spies on dependencies dynamically so you don't have to do it yourself
 * Easily phased into existing projects with no additional configuration required
 
+
+## Installation
+
+```bash
+npm install suite-slimmer-nest --save-dev
+```
+
 ## Usage
 
 ### Installation
